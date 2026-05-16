@@ -193,6 +193,24 @@ a:hover { color: var(--brand-orange); }
 
 .accordion-button:focus { box-shadow: none; }
 
+/* ----- Breadcrumb ----- */
+.breadcrumb-muted .breadcrumb-item a {
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+}
+
+.breadcrumb-muted .breadcrumb-item a:hover {
+    color: rgba(255,255,255,0.8);
+}
+
+.breadcrumb-muted .breadcrumb-item.active {
+    color: rgba(255,255,255,0.5);
+}
+
+.breadcrumb-muted .breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255,255,255,0.3);
+}
+
 /* ----- Contact Form ----- */
 .contact-wrapper {
     background: #fff;

@@ -1,7 +1,7 @@
 <?php if (!empty($breadcrumbs)): ?>
-<nav aria-label="breadcrumb" class="bg-light border-bottom py-2">
+<nav aria-label="breadcrumb" class="pt-2">
     <div class="container">
-        <ol class="breadcrumb mb-0 small">
+        <ol class="breadcrumb mb-0 small breadcrumb-muted">
             <li class="breadcrumb-item"><a href="<?= base_url('/') ?>">Home</a></li>
             <?php foreach ($breadcrumbs as $label => $url): ?>
                 <?php if ($url): ?>
