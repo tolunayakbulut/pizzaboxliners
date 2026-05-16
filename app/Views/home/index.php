@@ -22,7 +22,6 @@
                     </a>
                 </div>
                 <div class="hero-contact-info">
-                    <small class="text-muted d-block mb-1">Direct contact</small>
                     <div>
                         <i class="bi bi-whatsapp text-success me-1"></i>
                         <span class="text-white me-3">+90 532 557 20 57</span>
@@ -32,12 +31,11 @@
                 </div>
             </div>
             <div class="col-lg-5 d-none d-lg-block">
-                <div class="product-img-placeholder" style="height:380px;">
-                    <div class="text-center">
-                        <i class="bi bi-image" style="font-size:3rem; color:#555;"></i>
-                        <p class="mt-2 mb-0" style="color:#777;">pizza-box-liners.webp</p>
-                    </div>
-                </div>
+                <img src="<?= base_url('assets/images/pizza-box-liners.webp') ?>"
+                     alt="Pizza box liners for wholesale food packaging"
+                     class="img-fluid rounded-3"
+                     style="height:380px; width:100%; object-fit:cover;"
+                     loading="eager">
             </div>
         </div>
     </div>

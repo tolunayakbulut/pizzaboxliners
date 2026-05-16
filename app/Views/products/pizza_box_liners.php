@@ -28,12 +28,11 @@
                 <a href="<?= base_url('products/wholesale-pizza-box-liners') ?>" class="btn btn-outline-secondary">Wholesale Options</a>
             </div>
             <div class="col-lg-6">
-                <div class="product-img-placeholder" style="height:340px;">
-                    <div class="text-center">
-                        <i class="bi bi-image" style="font-size:3rem; color:#ccc;"></i>
-                        <p class="mt-2 mb-0 small" style="color:#aaa;">pizza-box-liners.webp</p>
-                    </div>
-                </div>
+                <img src="<?= base_url('assets/images/pizza-box-liners.webp') ?>"
+                     alt="Pizza box liners manufactured by Yıldırım Ofset"
+                     class="img-fluid rounded-3"
+                     style="height:340px; width:100%; object-fit:cover;"
+                     loading="lazy">
             </div>
         </div>
     </div>

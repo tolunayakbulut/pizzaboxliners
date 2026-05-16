@@ -15,12 +15,11 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
 
-                <div class="product-img-placeholder mb-5">
-                    <div class="text-center">
-                        <i class="bi bi-image" style="font-size:3rem; color:#ccc;"></i>
-                        <p class="mt-2 mb-0 small" style="color:#aaa;">pizza-box-liners.webp</p>
-                    </div>
-                </div>
+                <img src="<?= base_url('assets/images/pizza-box-liners.webp') ?>"
+                     alt="Pizza box liner paper for pizza packaging"
+                     class="img-fluid rounded-3 mb-5 w-100"
+                     style="max-height:380px; object-fit:cover;"
+                     loading="lazy">
 
                 <h2>Pizza Box Liners Explained</h2>
                 <p>
