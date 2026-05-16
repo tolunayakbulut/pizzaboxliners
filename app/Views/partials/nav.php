@@ -2,7 +2,7 @@
     <div class="container">
         <a class="navbar-brand" href="<?= base_url('/') ?>">
             <img src="<?= base_url('assets/images/PizzaBoxLinerLogoBlack.png') ?>"
-                 alt="Pizza Box Liners" height="38" loading="eager">
+                 alt="Pizza Box Liners" height="25" loading="eager">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
             <span class="navbar-toggler-icon"></span>
