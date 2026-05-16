@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm sticky-top">
     <div class="container">
-        <a class="navbar-brand fw-bold text-danger" href="<?= base_url('/') ?>">
-            <i class="bi bi-circle-fill me-1"></i> Pizza Box Liners
+        <a class="navbar-brand" href="<?= base_url('/') ?>">
+            <img src="<?= base_url('assets/images/PizzaBoxLinerLogoBlack.png') ?>"
+                 alt="Pizza Box Liners" height="38" loading="eager">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
             <span class="navbar-toggler-icon"></span>

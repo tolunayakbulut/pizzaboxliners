@@ -3,7 +3,8 @@
         <div class="row g-4">
             <!-- Brand column -->
             <div class="col-lg-4">
-                <h5 class="fw-bold text-danger mb-3">Pizza Box Liners</h5>
+                <img src="<?= base_url('assets/images/PizzaBoxLinerLogoWhite.png') ?>"
+                     alt="Pizza Box Liners" height="40" class="mb-3 d-block" loading="lazy">
                 <p class="text-muted small">
                     Manufactured by <strong class="text-light">Yıldırım Ofset</strong> — a B2B packaging and printing manufacturer supplying wholesale pizza box liners for restaurants, pizza chains, distributors, and international buyers.
                 </p>
