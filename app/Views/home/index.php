@@ -68,12 +68,11 @@
     <div class="container">
         <div class="row align-items-center g-5">
             <div class="col-lg-5">
-                <div class="product-img-placeholder">
-                    <div class="text-center">
-                        <i class="bi bi-image" style="font-size:2.5rem; color:#ccc;"></i>
-                        <p class="mt-2 mb-0 small" style="color:#aaa;">pizza-box-liner-paper.webp</p>
-                    </div>
-                </div>
+                <img src="<?= base_url('assets/images/pizza-box-liner-paper.webp') ?>"
+                     alt="Pizza box liner paper for restaurants and delivery packaging"
+                     class="img-fluid rounded-3"
+                     style="height:320px; width:100%; object-fit:cover;"
+                     loading="lazy">
             </div>
             <div class="col-lg-7">
                 <span class="section-label">Benefits</span>
