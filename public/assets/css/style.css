@@ -1,0 +1,280 @@
+/* =========================================================
+   Pizza Box Liners — Custom Stylesheet
+   Brand: Yıldırım Ofset | pizzaboxliners.net
+   ========================================================= */
+
+:root {
+    --brand-red:    #dc3545;
+    --brand-orange: #e85d04;
+    --brand-dark:   #1a1a2e;
+    --gray-soft:    #f8f9fa;
+    --gray-mid:     #6c757d;
+}
+
+/* ----- Base ----- */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #333;
+    line-height: 1.7;
+}
+
+a { color: var(--brand-red); }
+a:hover { color: var(--brand-orange); }
+
+/* ----- Navbar ----- */
+.navbar-brand {
+    font-size: 1.2rem;
+    letter-spacing: -0.3px;
+}
+
+/* ----- Hero Section ----- */
+.hero-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #2d1b00 100%);
+    color: #fff;
+    padding: 90px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('../images/pizza-box-liners.webp') center/cover no-repeat;
+    opacity: 0.12;
+}
+
+.hero-section .container { position: relative; z-index: 1; }
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(220, 53, 69, 0.2);
+    border: 1px solid rgba(220, 53, 69, 0.4);
+    color: #ff6b7a;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.hero-section h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-section .lead {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.85);
+    max-width: 580px;
+}
+
+.hero-contact-info {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+/* ----- Section Titles ----- */
+.section-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--brand-red);
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: var(--brand-dark);
+}
+
+/* ----- Feature Card ----- */
+.feature-card {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 28px 24px;
+    height: 100%;
+    transition: box-shadow 0.25s, transform 0.25s;
+    background: #fff;
+}
+
+.feature-card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+}
+
+.feature-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba(220, 53, 69, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--brand-red);
+    margin-bottom: 16px;
+}
+
+/* ----- Industry Card ----- */
+.industry-card {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: center;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: #fff;
+    height: 100%;
+}
+
+.industry-card:hover {
+    border-color: var(--brand-red);
+    box-shadow: 0 4px 20px rgba(220, 53, 69, 0.12);
+}
+
+.industry-card .icon-wrap {
+    font-size: 2rem;
+    color: var(--brand-red);
+    margin-bottom: 12px;
+}
+
+/* ----- Blog Card ----- */
+.blog-card {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow 0.25s, transform 0.25s;
+    height: 100%;
+    background: #fff;
+}
+
+.blog-card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transform: translateY(-3px);
+}
+
+.blog-card-body {
+    padding: 22px;
+}
+
+.blog-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--brand-red);
+    font-weight: 600;
+}
+
+.blog-card-img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+    background: #f0f0f0;
+}
+
+/* ----- CTA Section ----- */
+.cta-section {
+    background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-orange) 100%) !important;
+}
+
+/* ----- FAQ ----- */
+.accordion-button:not(.collapsed) {
+    color: var(--brand-red);
+    background-color: rgba(220, 53, 69, 0.05);
+    box-shadow: none;
+}
+
+.accordion-button:focus { box-shadow: none; }
+
+/* ----- Contact Form ----- */
+.contact-wrapper {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.07);
+    padding: 40px;
+}
+
+.form-label { font-weight: 500; font-size: 0.9rem; }
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--brand-red);
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.12);
+}
+
+/* ----- Sticky contact (mobile only) ----- */
+.sticky-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 16px;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sticky-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    transition: transform 0.2s;
+}
+
+.sticky-btn:hover { transform: scale(1.1); }
+
+.sticky-wa { background: #25d366; color: #fff; }
+.sticky-email { background: var(--brand-red); color: #fff; }
+
+/* ----- Misc ----- */
+.bg-soft { background-color: var(--gray-soft); }
+
+.text-brand { color: var(--brand-red); }
+
+.divider {
+    width: 48px;
+    height: 4px;
+    background: var(--brand-red);
+    border-radius: 2px;
+    margin: 12px 0 24px;
+}
+
+.divider-center { margin: 12px auto 24px; }
+
+.product-img-placeholder {
+    width: 100%;
+    height: 320px;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+/* ----- Page hero (inner pages) ----- */
+.page-hero {
+    background: linear-gradient(135deg, #1a1a2e, #2d1b00);
+    color: #fff;
+    padding: 60px 0 50px;
+}
+
+.page-hero h1 { font-weight: 800; }
+
+/* ----- Responsive ----- */
+@media (max-width: 767px) {
+    .hero-section { padding: 60px 0 50px; }
+    .contact-wrapper { padding: 24px; }
+}

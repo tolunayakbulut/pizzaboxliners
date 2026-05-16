@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /writable/
+Disallow: /app/
+
+Sitemap: https://pizzaboxliners.net/sitemap.xml
