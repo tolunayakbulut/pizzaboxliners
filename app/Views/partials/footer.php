@@ -5,7 +5,7 @@
             <div class="col-lg-4">
                 <img src="<?= base_url('assets/images/PizzaBoxLinerLogoWhite.png') ?>"
                      alt="Pizza Box Liners" height="25" class="mb-3 d-block" loading="lazy">
-                <p class="text-muted small">
+                <p class="small" style="color:rgba(255,255,255,0.6);">
                     Manufactured by <strong class="text-light">Yıldırım Ofset</strong> — a B2B packaging and printing manufacturer supplying wholesale pizza box liners for restaurants, pizza chains, distributors, and international buyers.
                 </p>
                 <p class="mb-1">
@@ -22,38 +22,38 @@
 
             <!-- Products column -->
             <div class="col-lg-2 col-6">
-                <h6 class="text-uppercase text-muted small fw-bold mb-3">Products</h6>
+                <h6 class="text-uppercase small fw-bold mb-3" style="color:rgba(255,255,255,0.6);">Products</h6>
                 <ul class="list-unstyled small">
-                    <li class="mb-1"><a href="<?= base_url('products/pizza-box-liners') ?>" class="text-muted text-decoration-none">Pizza Box Liners</a></li>
-                    <li class="mb-1"><a href="<?= base_url('products/wholesale-pizza-box-liners') ?>" class="text-muted text-decoration-none">Wholesale Pizza Box Liners</a></li>
-                    <li class="mb-1"><a href="<?= base_url('products/custom-pizza-box-liners') ?>" class="text-muted text-decoration-none">Custom Pizza Box Liners</a></li>
-                    <li class="mb-1"><a href="<?= base_url('products') ?>" class="text-muted text-decoration-none">All Products</a></li>
+                    <li class="mb-1"><a href="<?= base_url('products/pizza-box-liners') ?>" class="text-light text-decoration-none">Pizza Box Liners</a></li>
+                    <li class="mb-1"><a href="<?= base_url('products/wholesale-pizza-box-liners') ?>" class="text-light text-decoration-none">Wholesale Pizza Box Liners</a></li>
+                    <li class="mb-1"><a href="<?= base_url('products/custom-pizza-box-liners') ?>" class="text-light text-decoration-none">Custom Pizza Box Liners</a></li>
+                    <li class="mb-1"><a href="<?= base_url('products') ?>" class="text-light text-decoration-none">All Products</a></li>
                 </ul>
             </div>
 
             <!-- Applications column -->
             <div class="col-lg-2 col-6">
-                <h6 class="text-uppercase text-muted small fw-bold mb-3">Applications</h6>
+                <h6 class="text-uppercase small fw-bold mb-3" style="color:rgba(255,255,255,0.6);">Applications</h6>
                 <ul class="list-unstyled small">
-                    <li class="mb-1"><a href="<?= base_url('applications/pizza-restaurants') ?>" class="text-muted text-decoration-none">Pizza Restaurants</a></li>
-                    <li class="mb-1"><a href="<?= base_url('applications/pizza-chains') ?>" class="text-muted text-decoration-none">Pizza Chains</a></li>
-                    <li class="mb-1"><a href="<?= base_url('applications/food-packaging-distributors') ?>" class="text-muted text-decoration-none">Packaging Distributors</a></li>
+                    <li class="mb-1"><a href="<?= base_url('applications/pizza-restaurants') ?>" class="text-light text-decoration-none">Pizza Restaurants</a></li>
+                    <li class="mb-1"><a href="<?= base_url('applications/pizza-chains') ?>" class="text-light text-decoration-none">Pizza Chains</a></li>
+                    <li class="mb-1"><a href="<?= base_url('applications/food-packaging-distributors') ?>" class="text-light text-decoration-none">Packaging Distributors</a></li>
                 </ul>
             </div>
 
             <!-- Company column -->
             <div class="col-lg-2 col-6">
-                <h6 class="text-uppercase text-muted small fw-bold mb-3">Company</h6>
+                <h6 class="text-uppercase small fw-bold mb-3" style="color:rgba(255,255,255,0.6);">Company</h6>
                 <ul class="list-unstyled small">
-                    <li class="mb-1"><a href="<?= base_url('about') ?>" class="text-muted text-decoration-none">About Yıldırım Ofset</a></li>
-                    <li class="mb-1"><a href="<?= base_url('blog') ?>" class="text-muted text-decoration-none">Blog</a></li>
-                    <li class="mb-1"><a href="<?= base_url('contact') ?>" class="text-muted text-decoration-none">Contact</a></li>
+                    <li class="mb-1"><a href="<?= base_url('about') ?>" class="text-light text-decoration-none">About Yıldırım Ofset</a></li>
+                    <li class="mb-1"><a href="<?= base_url('blog') ?>" class="text-light text-decoration-none">Blog</a></li>
+                    <li class="mb-1"><a href="<?= base_url('contact') ?>" class="text-light text-decoration-none">Contact</a></li>
                 </ul>
             </div>
 
             <!-- Contact CTA column -->
             <div class="col-lg-2 col-6">
-                <h6 class="text-uppercase text-muted small fw-bold mb-3">Get a Quote</h6>
+                <h6 class="text-uppercase small fw-bold mb-3" style="color:rgba(255,255,255,0.6);">Get a Quote</h6>
                 <a href="https://wa.me/905325572057?text=Hello%20Yildirim%20Ofset,%20I%20would%20like%20to%20get%20a%20quote%20for%20pizza%20box%20liners."
                    class="btn btn-success btn-sm w-100 mb-2" target="_blank" rel="noopener">
                     <i class="bi bi-whatsapp me-1"></i> WhatsApp
@@ -66,10 +66,10 @@
 
         <hr class="border-secondary mt-4">
         <div class="row align-items-center">
-            <div class="col-md-6 text-muted small">
-                &copy; <?= date('Y') ?> Yıldırım Ofset. All rights reserved. | <a href="<?= base_url('sitemap.xml') ?>" class="text-muted">Sitemap</a>
+            <div class="col-md-6 small" style="color:rgba(255,255,255,0.5);">
+                &copy; <?= date('Y') ?> Yıldırım Ofset. All rights reserved. | <a href="<?= base_url('sitemap.xml') ?>" class="text-light text-decoration-none">Sitemap</a>
             </div>
-            <div class="col-md-6 text-md-end text-muted small">
+            <div class="col-md-6 text-md-end small" style="color:rgba(255,255,255,0.5);">
                 Wholesale pizza box liners manufacturer — pizzaboxliners.net
             </div>
         </div>
