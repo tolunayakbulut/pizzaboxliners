@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" type="image/png" href="<?= base_url('favicon.ico') ?>">
     <title><?= esc($meta['title'] ?? 'Pizza Box Liners Manufacturer | Wholesale Pizza Box Liners') ?></title>
     <meta name="description" content="<?= esc($meta['description'] ?? 'Yıldırım Ofset manufactures wholesale pizza box liners for restaurants, pizza chains, distributors, and food packaging suppliers.') ?>">
 
