@@ -45,12 +45,11 @@
                 </a>
             </div>
             <div class="col-lg-6">
-                <div class="product-img-placeholder" style="height:360px;">
-                    <div class="text-center">
-                        <i class="bi bi-image" style="font-size:3rem; color:#ccc;"></i>
-                        <p class="mt-2 mb-0 small" style="color:#aaa;">wholesale-pizza-box-liners.webp</p>
-                    </div>
-                </div>
+                <img src="<?= base_url('assets/images/wholesale-pizza-box-liners.webp') ?>"
+                     alt="Wholesale pizza box liners bulk supply"
+                     class="img-fluid rounded-3"
+                     style="height:360px; width:100%; object-fit:cover;"
+                     loading="lazy">
             </div>
         </div>
     </div>

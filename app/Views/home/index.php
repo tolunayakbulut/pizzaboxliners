@@ -178,12 +178,11 @@
                 <a href="<?= base_url('products/wholesale-pizza-box-liners') ?>" class="btn btn-outline-secondary">Wholesale Details</a>
             </div>
             <div class="col-lg-5">
-                <div class="product-img-placeholder">
-                    <div class="text-center">
-                        <i class="bi bi-image" style="font-size:2.5rem; color:#ccc;"></i>
-                        <p class="mt-2 mb-0 small" style="color:#aaa;">wholesale-pizza-box-liners.webp</p>
-                    </div>
-                </div>
+                <img src="<?= base_url('assets/images/wholesale-pizza-box-liners.webp') ?>"
+                     alt="Wholesale pizza box liners bulk production"
+                     class="img-fluid rounded-3"
+                     style="height:320px; width:100%; object-fit:cover;"
+                     loading="lazy">
             </div>
         </div>
     </div>

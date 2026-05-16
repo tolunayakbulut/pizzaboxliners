@@ -35,11 +35,11 @@
             </div>
             <div class="col-md-4">
                 <div class="feature-card h-100 d-flex flex-column">
-                    <div class="product-img-placeholder mb-3" style="height:200px;font-size:0;border-radius:8px;">
-                        <div class="d-flex align-items-center justify-content-center h-100 text-center" style="font-size:0.8rem; color:#aaa;">
-                            <div><i class="bi bi-image" style="font-size:2rem; color:#ccc; display:block;"></i>wholesale-pizza-box-liners.webp</div>
-                        </div>
-                    </div>
+                    <img src="<?= base_url('assets/images/wholesale-pizza-box-liners.webp') ?>"
+                         alt="Wholesale pizza box liners"
+                         class="mb-3 w-100 rounded-3"
+                         style="height:200px; object-fit:cover;"
+                         loading="lazy">
                     <div class="feature-icon"><i class="bi bi-truck"></i></div>
                     <h5 class="fw-bold mb-2">Wholesale Pizza Box Liners</h5>
                     <p class="text-muted small mb-3 flex-grow-1">Bulk supply of pizza box liners for distributors, wholesalers, and large pizza chains with high-volume requirements.</p>
