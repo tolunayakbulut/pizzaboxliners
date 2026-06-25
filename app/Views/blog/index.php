@@ -20,12 +20,7 @@
             <?php foreach ($posts as $post): ?>
             <div class="col-md-6 col-lg-4">
                 <div class="blog-card">
-                    <div class="blog-card-img d-flex align-items-center justify-content-center">
-                        <div class="text-center" style="color:#aaa; font-size:0.8rem;">
-                            <i class="bi bi-image" style="font-size:2.5rem; color:#ccc; display:block;"></i>
-                            <?= esc($post['image']) ?>
-                        </div>
-                    </div>
+                    <img src="<?= base_url('assets/images/' . $post['image']) ?>" alt="<?= esc($post['title']) ?>" class="blog-card-img">
                     <div class="blog-card-body">
                         <span class="blog-tag"><?= esc($post['tag']) ?></span>
                         <h5 class="fw-bold mt-2 mb-2">

@@ -15,12 +15,11 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
 
-                <div class="product-img-placeholder mb-5">
-                    <div class="text-center">
-                        <i class="bi bi-image" style="font-size:3rem; color:#ccc;"></i>
-                        <p class="mt-2 mb-0 small" style="color:#aaa;">custom-pizza-box-liners.webp</p>
-                    </div>
-                </div>
+                <img src="<?= base_url('assets/images/pizza-box-liners.webp') ?>"
+                     alt="Choosing the right pizza box liner size"
+                     class="img-fluid rounded-3 mb-5 w-100"
+                     style="max-height:380px; object-fit:cover;"
+                     loading="lazy">
 
                 <h2>Why Pizza Box Liner Size Matters</h2>
                 <p>

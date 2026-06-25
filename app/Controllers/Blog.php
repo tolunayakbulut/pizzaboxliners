@@ -122,14 +122,14 @@ class Blog extends BaseController
                 'title'       => 'Pizza Box Liners vs Pizza Box Inserts: What Is the Difference?',
                 'excerpt'     => 'A clear comparison between pizza box liners and pizza box inserts to help buyers choose the right product.',
                 'tag'         => 'Comparison',
-                'image'       => 'pizza-packaging-paper-liners.webp',
+                'image'       => 'pizza-box-liner-paper.webp',
             ],
             [
                 'url'         => base_url('blog/how-to-choose-pizza-box-liner-size'),
                 'title'       => 'How to Choose the Right Pizza Box Liner Size',
                 'excerpt'     => 'A practical guide on selecting the correct liner size for your pizza box dimensions and business needs.',
                 'tag'         => 'Sizing Guide',
-                'image'       => 'custom-pizza-box-liners.webp',
+                'image'       => 'pizza-box-liners.webp',
             ],
             [
                 'url'         => base_url('blog/wholesale-pizza-box-liners-guide'),

@@ -40,12 +40,11 @@
                 <a href="<?= base_url('contact') ?>" class="btn btn-danger btn-lg">Request Custom Quote</a>
             </div>
             <div class="col-lg-6">
-                <div class="product-img-placeholder" style="height:340px;">
-                    <div class="text-center">
-                        <i class="bi bi-image" style="font-size:3rem; color:#ccc;"></i>
-                        <p class="mt-2 mb-0 small" style="color:#aaa;">custom-pizza-box-liners.webp</p>
-                    </div>
-                </div>
+                <img src="<?= base_url('assets/images/pizza-box-liners.webp') ?>"
+                     alt="Custom pizza box liners manufactured by Yıldırım Ofset"
+                     class="img-fluid rounded-3"
+                     style="height:340px; width:100%; object-fit:cover;"
+                     loading="lazy">
             </div>
         </div>
     </div>

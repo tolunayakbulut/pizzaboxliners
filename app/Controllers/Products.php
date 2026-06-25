@@ -39,6 +39,11 @@ class Products extends BaseController
             'description' => 'Wholesale pizza box liners manufactured for restaurants, pizza chains, packaging distributors, and food packaging suppliers.',
             'brand'       => ['@type' => 'Brand', 'name' => 'Yıldırım Ofset'],
             'category'    => 'Food Packaging',
+            'offers'      => [
+                '@type'        => 'Offer',
+                'url'          => $meta['canonical'],
+                'availability' => 'https://schema.org/InStock',
+            ],
         ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
         return view('products/pizza_box_liners', compact('meta', 'breadcrumbs', 'schema'));
@@ -64,6 +69,11 @@ class Products extends BaseController
             'description' => 'Custom-size pizza box liners manufactured to specification for restaurants, distributors, and food packaging companies.',
             'brand'       => ['@type' => 'Brand', 'name' => 'Yıldırım Ofset'],
             'category'    => 'Food Packaging',
+            'offers'      => [
+                '@type'        => 'Offer',
+                'url'          => $meta['canonical'],
+                'availability' => 'https://schema.org/InStock',
+            ],
         ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
         return view('products/custom_pizza_box_liners', compact('meta', 'breadcrumbs', 'schema'));
@@ -89,6 +99,11 @@ class Products extends BaseController
             'description' => 'Bulk pizza box liners supplied wholesale to restaurants, pizza chains, distributors, and international buyers.',
             'brand'       => ['@type' => 'Brand', 'name' => 'Yıldırım Ofset'],
             'category'    => 'Food Packaging',
+            'offers'      => [
+                '@type'        => 'Offer',
+                'url'          => $meta['canonical'],
+                'availability' => 'https://schema.org/InStock',
+            ],
         ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
         return view('products/wholesale_pizza_box_liners', compact('meta', 'breadcrumbs', 'schema'));
