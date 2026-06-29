@@ -43,6 +43,7 @@ jobs:
           port: 21
           username: tolunay2
           password: ${{ secrets.FTP_PASSWORD }}
+          security: loose
           server-dir: pizzaboxliners.net/
           exclude: |
             **/.git*
