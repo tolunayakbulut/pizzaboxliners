@@ -63,7 +63,7 @@ class Contact extends BaseController
     {
         $email = \Config\Services::email();
 
-        $email->setFrom('info@yildirimofset.com.tr', 'Pizza Box Liners');
+        $email->setFrom('noreply@pizzaboxliners.net', 'Pizza Box Liners');
         $email->setTo('info@yildirimofset.com.tr');
         $email->setReplyTo($data['email'], $data['name']);
         $email->setSubject('New Pizza Box Liners Wholesale Inquiry from ' . $data['name']);
