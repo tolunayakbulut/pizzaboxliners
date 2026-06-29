@@ -27,6 +27,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?= base_url('blog') ?>">Blog</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= base_url('contact') ?>">Contact</a>
+                </li>
                 <li class="nav-item ms-lg-2">
                     <a class="btn btn-danger btn-sm px-3" href="<?= base_url('contact') ?>">
                         Get a Quote
