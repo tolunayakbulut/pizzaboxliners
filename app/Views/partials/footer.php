@@ -13,11 +13,27 @@
                         <i class="bi bi-whatsapp me-1"></i> +90 532 557 20 57
                     </a>
                 </p>
-                <p>
+                <p class="mb-1">
+                    <a href="tel:+902324497508" class="text-light text-decoration-none">
+                        <i class="bi bi-telephone me-1"></i> +90 (232) 449 75 08
+                    </a>
+                </p>
+                <p class="mb-1" style="color:rgba(255,255,255,0.6);">
+                    <i class="bi bi-printer me-1"></i> Fax: +90 (232) 449 75 16
+                </p>
+                <p class="mb-1">
                     <a href="mailto:info@yildirimofset.com.tr?subject=Pizza%20Box%20Liners%20Wholesale%20Inquiry" class="text-light text-decoration-none">
                         <i class="bi bi-envelope me-1"></i> info@yildirimofset.com.tr
                     </a>
                 </p>
+                <p class="small mb-0" style="color:rgba(255,255,255,0.6);">
+                    <i class="bi bi-geo-alt me-1"></i> Kemalpaşa Cad. No: 33, Çamdibi - Bornova / İZMİR
+                </p>
+                <div class="mt-3 d-flex align-items-center gap-2">
+                    <img src="<?= base_url('assets/images/ticaret-odasi.svg') ?>"
+                         alt="İzmir Ticaret Odası Üyesi" height="48" loading="lazy">
+                    <span class="small" style="color:rgba(255,255,255,0.5);">İzmir Ticaret Odası Üyesi</span>
+                </div>
             </div>
 
             <!-- Products column -->

@@ -144,6 +144,27 @@
                         </div>
                     </div>
 
+                    <div class="d-flex gap-3 align-items-start mb-4 p-3 bg-soft rounded-3">
+                        <div style="width:48px; height:48px; background:#0d6efd; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.3rem; color:#fff; flex-shrink:0;">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div>
+                            <p class="fw-semibold mb-1">Phone / Fax</p>
+                            <a href="tel:+902324497508" class="text-decoration-none fw-bold d-block">+90 (232) 449 75 08</a>
+                            <span class="text-muted small">Fax: +90 (232) 449 75 16</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 align-items-start mb-4 p-3 bg-soft rounded-3">
+                        <div style="width:48px; height:48px; background:#6c757d; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.3rem; color:#fff; flex-shrink:0;">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div>
+                            <p class="fw-semibold mb-1">Address</p>
+                            <p class="mb-0 small">Kemalpaşa Cad. No: 33<br>Çamdibi - Bornova / İZMİR</p>
+                        </div>
+                    </div>
+
                     <div class="p-3 bg-soft rounded-3 mb-4">
                         <h6 class="fw-bold mb-3">What to Include in Your Inquiry</h6>
                         <ul class="list-unstyled text-muted small mb-0">
