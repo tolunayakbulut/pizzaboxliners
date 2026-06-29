@@ -63,6 +63,7 @@ class Contact extends BaseController
     {
         $email = \Config\Services::email();
 
+        $email->setFrom('info@yildirimofset.com.tr', 'Pizza Box Liners');
         $email->setTo('info@yildirimofset.com.tr');
         $email->setReplyTo($data['email'], $data['name']);
         $email->setSubject('New Pizza Box Liners Wholesale Inquiry from ' . $data['name']);
@@ -78,6 +79,9 @@ class Contact extends BaseController
         $body .= "Message:\n{$data['message']}\n";
 
         $email->setMessage($body);
-        $email->send();
+
+        if (!$email->send()) {
+            log_message('error', 'Contact form email failed: ' . $email->printDebugger(['headers']));
+        }
     }
 }
