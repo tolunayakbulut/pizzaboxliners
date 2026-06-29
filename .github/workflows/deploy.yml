@@ -10,6 +10,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Generate .env
+        run: |
+          cat > .env << EOF
+          CI_ENVIRONMENT = production
+
+          app.baseURL = 'https://pizzaboxliners.net/'
+
+          database.default.hostname = localhost
+          database.default.database = tolunay2_pizzaboxliners
+          database.default.username = tolunay2_pizzaboxliners
+          database.default.password = ${{ secrets.DB_PASSWORD }}
+          database.default.DBDriver = MySQLi
+          database.default.port     = 3306
+
+          email.protocol   = smtp
+          email.SMTPHost   = manto.veridyen.com
+          email.SMTPUser   = noreply@pizzaboxliners.net
+          email.SMTPPass   = ${{ secrets.SMTP_PASS }}
+          email.SMTPPort   = 465
+          email.SMTPCrypto = ssl
+          email.fromEmail  = noreply@pizzaboxliners.net
+          email.fromName   = "Pizza Box Liners"
+
+          encryption.key = ${{ secrets.ENCRYPTION_KEY }}
+          EOF
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
