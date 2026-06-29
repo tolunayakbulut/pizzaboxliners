@@ -32,7 +32,7 @@
                 <div class="mt-3 d-flex align-items-center gap-2">
                     <img src="<?= base_url('assets/images/ticaret-odasi.svg') ?>"
                          alt="İzmir Ticaret Odası Üyesi" height="48" loading="lazy">
-                    <span class="small" style="color:rgba(255,255,255,0.5);">İzmir Ticaret Odası Üyesi</span>
+                    <span class="small" style="color:rgba(255,255,255,0.5);">Member of İzmir Chamber of Commerce</span>
                 </div>
             </div>
 
