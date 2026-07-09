@@ -11,6 +11,13 @@
       gtag('config', 'G-QDBV4F104K');
     </script>
 
+    <!-- Google tag (gtag.js) event -->
+    <script>
+      gtag('event', 'conversion_event_page_view', {
+        // <event_parameters>
+      });
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
