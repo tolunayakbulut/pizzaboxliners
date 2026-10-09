@@ -54,3 +54,4 @@ jobs:
             **/writable/uploads/**
             **/writable/debugbar/**
             deploy/**
+            seo-log.md
