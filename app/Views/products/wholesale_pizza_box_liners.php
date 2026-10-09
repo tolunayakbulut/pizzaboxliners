@@ -125,7 +125,7 @@
     </div>
 </section>
 
-<?php $cta_title = 'Ready to Order Wholesale Pizza Box Liners?'; $cta_text = 'Contact Yıldırım Ofset for bulk order pricing and international supply details.'; ?>
+<?php $this->setVar('cta_title', 'Ready to Order Wholesale Pizza Box Liners?'); $this->setVar('cta_text', 'Contact Yıldırım Ofset for bulk order pricing and international supply details.'); ?>
 <?= $this->include('partials/cta_section') ?>
 
 <?= $this->endSection() ?>
