@@ -11,6 +11,22 @@
       gtag('config', 'G-QDBV4F104K');
     </script>
 
+    <!-- Conversion tracking config (values from Config\Tracking / .env) -->
+    <?php $tracking = config('Tracking'); ?>
+    <script>
+      window.pblTracking = <?= json_encode([
+          'adsId'  => $tracking->adsId,
+          'labels' => [
+              'whatsapp_click'      => $tracking->labelWhatsapp,
+              'email_click'         => $tracking->labelEmail,
+              'contact_form_submit' => $tracking->labelContactForm,
+          ],
+      ], JSON_UNESCAPED_SLASHES | JSON_HEX_TAG) ?>;
+      <?php if ($tracking->adsId !== ''): ?>
+      gtag('config', <?= json_encode($tracking->adsId) ?>);
+      <?php endif; ?>
+    </script>
+
     <!-- Google tag (gtag.js) event -->
     <script>
       gtag('event', 'conversion_event_page_view', {
