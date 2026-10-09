@@ -100,7 +100,7 @@
     </div>
 </section>
 
-<?php $cta_title = 'Need Custom Pizza Box Liners?'; $cta_text = 'Contact Yıldırım Ofset to discuss custom sizes, bulk production, and export options.'; ?>
+<?php $this->setVar('cta_title', 'Need Custom Pizza Box Liners?'); $this->setVar('cta_text', 'Contact Yıldırım Ofset to discuss custom sizes, bulk production, and export options.'); ?>
 <?= $this->include('partials/cta_section') ?>
 
 <?= $this->endSection() ?>
