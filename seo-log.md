@@ -73,3 +73,9 @@
 - Ads'te artık Birincil web dönüşümü yok; ilk birincil dönüşümler `whatsapp_click` / `email_click` olacak.
 - **Bekleyen:** `whatsapp_click` / `email_click` GA4 Recent events listesinde henüz yok (son kontrol 2026-10-09). Görününce: yıldızla → Ads'e GA4 import, Birincil.
 - **Bekleyen onay:** `fix/cta-setvar` branch (CTA başlık düzeltmesi, 7 sayfa) merge edilmedi.
+
+## 2026-10-09 — CTA başlık düzeltmesi (kullanıcı onaylı)
+
+- `fix/cta-setvar` main'e merge (`07b1ba7`), deploy başarılı.
+- 6 sayfada CTA artık sayfaya özel başlık/metin gösteriyor (products ×3, applications ×3); canlıda doğrulandı. Diğer sayfalar varsayılan CTA'da.
+- Diff gate: kaldırılan öğe yok; sadece CTA metni değişti, title/meta aynı.
