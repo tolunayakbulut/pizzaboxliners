@@ -32,21 +32,14 @@ class Products extends BaseController
             'Pizza Box Liners' => null,
         ];
 
-        $schema = json_encode([
-            '@context'    => 'https://schema.org',
-            '@type'       => 'Product',
-            'name'        => 'Pizza Box Liners',
-            'description' => 'Wholesale pizza box liners manufactured for restaurants, pizza chains, packaging distributors, and food packaging suppliers.',
-            'brand'       => ['@type' => 'Brand', 'name' => 'Yıldırım Ofset'],
-            'category'    => 'Food Packaging',
-            'offers'      => [
-                '@type'        => 'Offer',
-                'url'          => $meta['canonical'],
-                'availability' => 'https://schema.org/InStock',
-            ],
-        ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+        $specs  = config('ProductSpecs')->available();
+        $schema = $this->productSchema(
+            'Pizza Box Liners',
+            'Wholesale pizza box liners manufactured for restaurants, pizza chains, packaging distributors, and food packaging suppliers.',
+            'pizza-box-liners.webp'
+        );
 
-        return view('products/pizza_box_liners', compact('meta', 'breadcrumbs', 'schema'));
+        return view('products/pizza_box_liners', compact('meta', 'breadcrumbs', 'schema', 'specs'));
     }
 
     public function customPizzaBoxLiners(): string
@@ -92,20 +85,41 @@ class Products extends BaseController
             'Wholesale Pizza Box Liners' => null,
         ];
 
-        $schema = json_encode([
-            '@context'    => 'https://schema.org',
-            '@type'       => 'Product',
-            'name'        => 'Wholesale Pizza Box Liners',
-            'description' => 'Bulk pizza box liners supplied wholesale to restaurants, pizza chains, distributors, and international buyers.',
-            'brand'       => ['@type' => 'Brand', 'name' => 'Yıldırım Ofset'],
-            'category'    => 'Food Packaging',
-            'offers'      => [
-                '@type'        => 'Offer',
-                'url'          => $meta['canonical'],
-                'availability' => 'https://schema.org/InStock',
-            ],
-        ], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+        $specs  = config('ProductSpecs')->available();
+        $schema = $this->productSchema(
+            'Wholesale Pizza Box Liners',
+            'Bulk pizza box liners supplied wholesale to restaurants, pizza chains, distributors, and international buyers.',
+            'wholesale-pizza-box-liners.webp'
+        );
 
-        return view('products/wholesale_pizza_box_liners', compact('meta', 'breadcrumbs', 'schema'));
+        return view('products/wholesale_pizza_box_liners', compact('meta', 'breadcrumbs', 'schema', 'specs'));
+    }
+
+    // Product schema built from confirmed specs only. No offers/price until
+    // pricing data is provided.
+    private function productSchema(string $name, string $description, string $image): string
+    {
+        $config = config('ProductSpecs');
+
+        $properties = [];
+        foreach ($config->available() as $label => $value) {
+            $properties[] = ['@type' => 'PropertyValue', 'name' => $label, 'value' => $value];
+        }
+
+        $schema = [
+            '@context'           => 'https://schema.org',
+            '@type'              => 'Product',
+            'name'               => $name,
+            'description'        => $description,
+            'image'              => base_url('assets/images/' . $image),
+            'brand'              => ['@type' => 'Brand', 'name' => 'Yıldırım Ofset'],
+            'manufacturer'       => ['@type' => 'Organization', 'name' => 'Yıldırım Ofset', 'url' => 'https://pizzaboxliners.net'],
+            'category'           => 'Food Packaging',
+            'width'              => ['@type' => 'QuantitativeValue', 'value' => $config->standardSizeCm['width'], 'unitCode' => 'CMT'],
+            'depth'              => ['@type' => 'QuantitativeValue', 'value' => $config->standardSizeCm['depth'], 'unitCode' => 'CMT'],
+            'additionalProperty' => $properties,
+        ];
+
+        return json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     }
 }
