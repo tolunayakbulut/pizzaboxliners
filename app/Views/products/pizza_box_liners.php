@@ -38,6 +38,10 @@
     </div>
 </section>
 
+<!-- Specifications -->
+<?php $this->setVar('spec_title', 'Pizza Box Liner Specifications'); ?>
+<?= $this->include('partials/spec_table') ?>
+
 <!-- Benefits -->
 <section class="py-5 bg-soft">
     <div class="container">

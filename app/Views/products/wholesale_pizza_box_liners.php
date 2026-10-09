@@ -55,6 +55,10 @@
     </div>
 </section>
 
+<!-- Specifications -->
+<?php $this->setVar('spec_title', 'Wholesale Pizza Box Liner Specifications'); ?>
+<?= $this->include('partials/spec_table') ?>
+
 <section class="py-5 bg-soft">
     <div class="container">
         <div class="text-center mb-5">
