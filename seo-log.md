@@ -65,3 +65,11 @@
 - `generate_lead` Ads'e import edilmemiş (Ads listesinde yok) → şu an çift sayım yok.
 - Not: 2026-10-09 test sırasında /contact ziyareti 1 adet `generate_lead` üretti.
 - Değişiklik yapılmadı; öneriler kullanıcıya sunuldu.
+
+## 2026-10-09 — Ads/GA4 temizlik (kullanıcı onaylı)
+
+- **Ads:** `Hakkımızda` (GA4 `ads_conversion_Hakkımızda_1`, /about page_view) Birincil → **İkincil**.
+- **GA4:** `generate_lead` key event işareti kaldırıldı ("has now been disabled as a key event"). Custom event kuralı silinmedi.
+- Ads'te artık Birincil web dönüşümü yok; ilk birincil dönüşümler `whatsapp_click` / `email_click` olacak.
+- **Bekleyen:** `whatsapp_click` / `email_click` GA4 Recent events listesinde henüz yok (son kontrol 2026-10-09). Görününce: yıldızla → Ads'e GA4 import, Birincil.
+- **Bekleyen onay:** `fix/cta-setvar` branch (CTA başlık düzeltmesi, 7 sayfa) merge edilmedi.
